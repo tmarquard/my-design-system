@@ -25,3 +25,12 @@ dist-ssr
 
 *storybook.log
 storybook-static
+
+# Playwright
+playwright-report/
+test-results/
+tests/__snapshots__/
+tests/__screenshots__/
+
+# Figma reference images — committed intentionally (run npm run download-figma-refs to update)
+# tests/__figma__/ is NOT ignored so references are version-controlled

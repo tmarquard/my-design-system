@@ -31,14 +31,18 @@
 
 /* ─── Sizes ────────────────────────────────────────────────────────────────── */
 
-.btn--large  { padding: 8px 22px; font-size: 15px; line-height: 26px; }
-.btn--medium { padding: 6px 16px; font-size: 14px; line-height: 24px; }
-.btn--small  { padding: 4px 10px; font-size: 13px; line-height: 22px; }
+/* Vertical padding is (Figma value − 1px) to absorb the 1px transparent border
+   so rendered height matches Figma: large=42px, medium=36px, small=30px.
+   Formula: (padding-top + padding-bottom) + line-height + 2px border = height
+            (7+7) + 26 + 2 = 42  |  (5+5) + 24 + 2 = 36  |  (3+3) + 22 + 2 = 30  */
+.btn--large  { padding: 7px 22px; font-size: 15px; line-height: 26px; }
+.btn--medium { padding: 5px 16px; font-size: 14px; line-height: 24px; }
+.btn--small  { padding: 3px 10px; font-size: 13px; line-height: 22px; }
 
 /* Text variant uses narrower horizontal padding */
-.btn--text.btn--large  { padding: 8px 11px; }
-.btn--text.btn--medium { padding: 6px 8px;  }
-.btn--text.btn--small  { padding: 4px 5px;  }
+.btn--text.btn--large  { padding: 7px 11px; }
+.btn--text.btn--medium { padding: 5px 8px;  }
+.btn--text.btn--small  { padding: 3px 5px;  }
 
 /* ─── Contained elevation ──────────────────────────────────────────────────── */
 
